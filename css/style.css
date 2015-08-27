@@ -1,60 +1,136 @@
 ﻿/* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
 html {
-
 }
 
-body {}
-
-#container 
-{
-    font-family:'Times New Roman';
-    font-style:italic;
-
+body {
 }
 
-#topbar{
-    background:#54b7ff url(../pics/kantradbat.png) no-repeat center;
-    text-align:right;
+#container {
+    font-family: 'Times New Roman';
+    width: 706px;
+    line-height: 30px;
+    background-color: #54b7ff;
+}
+
+#topbar {
+    background: #54b7ff url(../pics/kantradbat.png) no-repeat center;
+    text-align: right;
     color: white;
-    height:295px;
-    width:706px;
+    height: 305px;
+    width: 706px;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    margin-bottom:-16px;
+}
+
+a {
+    display: none;
+}
+
+#menu li {
+    display: inline;
+    float: left;
+    text-align: center;
+    background: #54b7ff;
+    font-family: Arial;
+}
+
+#menu {
+    margin-left: 12px;
 
 }
 
+    #menu li {
+        background-color: rgba(208, 212, 215, 0.90);
+        margin-right: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+       
+    }
+
+        #menu li a {
+            display: block;
+            width: 90px;
+            height: 32px;
+            text-decoration: none;
+            text-align: center;
+            padding-top: 8px;
+                color:white;
+
+        }
 
 
-#menu{
-  
-    width: 698px;
-    font-weight: bold;
-    color: #FFFFFF;
-    background-color: #98bf21;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-   
-    
+
+    #menu:first-letter {
+        text-transform: uppercase;
+    }
+    menu li active{
+        color: black !important;
+    }
+
+.active {
+    background-color: #a9a9a9 !important;
+    color: white !important;
 }
 
 .active {
-    background-color: #7A991A;
+    color:black!important;
 }
 
-ul{
+a {
+    color: black;
+    text-transform: lowercase;
+}
+
+    a:first-letter {
+        text-transform: capitalize;
+    }
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-li{ 
-    display:inline;}
 
-#content{
-    background-color:#a9a9a9;
+
+#content {
+    background-color: #a9a9a9;
+    width: 100%;
+    height: 760px;
 }
 
-#maincontent{
-    color:rgba(37, 26, 14, 0.85);
-    
+#maincontent {
+    color: rgba(79, 65, 51, 0.85);
+    float: left;
+    width: 47%;
+    margin-left: 3%;
+    overflow: hidden;
+}
+
+#subcontent {
+    color: rgba(79, 65, 51, 0.85);
+    float: right;
+    width: 37%;
+    font-size: 13px;
+    margin-top: 13%;
+    margin-left: 7%;
+    margin-right: 5%;
+    display: block;
+}
+
+    #subcontent a {
+        display: block;
+        text-transform: lowercase;
+    }
+
+img {
+    margin-right: 12px;
+    float: left;
+}
+
+#bottomcontent {
+    position: absolute;
+    bottom: 0;
 }
